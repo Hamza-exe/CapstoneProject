@@ -1,0 +1,198 @@
+
+/*---------------------------------------------------
+     Sizing
+---------------------------------------------------*/
+
+.calendar
+{
+    display: grid;
+    place-content: center;
+}
+
+.calendar .calendar-main-container
+{
+    border: solid rgb(247, 246, 246) 1.5px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    box-shadow: 20px 20px 35px 0 rgba(54, 54, 54, 0.10);
+}
+
+/*-----------------------------------
+    Calendar Header
+-------------------------------------*/
+
+.calendar .calendar-header
+{
+    padding: 20px 0;
+}
+
+.calendar .calendar-header p
+{
+    margin: 0;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.calendar .calendar-header h3
+{
+    font-size: 24px;
+}
+
+.calendar .calendar-header span
+{
+    color: rgb(137, 137, 137);
+}
+
+.calendar .calendar-header .month-container
+{
+    border-radius: 30px;
+    margin-left: -20px;
+    padding: 0 20px;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 35px 0 rgba(54, 54, 54, 0.10);
+}
+
+.calendar .calendar-header .month-container h3
+{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.calendar .calendar-header .month-container div
+{
+    display: flex;
+}
+
+.calendar .calendar-header .month-container div i
+{
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    color: rgb(125, 125, 125);
+    background-color: rgb(232, 232, 232);
+    margin-left: 5px;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.calendar .calendar-header .month-container div i:hover
+{
+    background-color: rgb(214, 214, 214);
+}
+
+/*-----------------------------------
+    Weekdays
+-------------------------------------*/
+
+.calendar .calendar_weekdays
+{
+    color: rgb(137, 137, 137);
+    font-size: 14px;    
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: solid 1px rgb(198, 198, 198);
+
+    /* main sizing -----------------------*/
+    width: calc(1050px - 40px);
+}
+
+.calendar .calendar_weekdays div {
+    display: inline-block;
+    width: 13.18571%;
+    text-align: center;
+}
+
+/*-----------------------------------
+    Calendar Content
+-------------------------------------*/
+
+.calendar .calendar_content div{
+    position: relative;
+    width: 14.28571%;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 0;
+    height: 110px;
+    float: left;
+    border-bottom: solid 1px rgb(204, 203, 203);
+    display: block;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+
+    /* main sizing -----------------------*/
+    height: 110px;
+}
+
+.calendar .calendar_content div:hover{
+    background-color: rgb(231, 231, 231);
+    /* opacity: 0.7; */
+}
+
+.calendar .calendar_content div p{
+    text-align: left;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+
+.calendar .calendar_content div i{
+    display: block;
+    margin: 5px 2.5px;
+}
+
+/*-----------------------------------
+    Graphics
+-------------------------------------*/
+
+.calendar .calendar_content div.past-date p{
+    color: rgb(94, 93, 93);
+}
+
+.calendar .calendar_content div.today p{
+    color: white;
+    background-color:  rgb(41, 132, 235);
+}
+
+/* Holiday -----------------------------------*/
+.calendar .calendar_content div.holiday {
+    background-color:  rgb(170, 170, 170);
+}
+.calendar .calendar_content div.holiday p{
+    color: white; 
+}
+
+/* Absent ------------------------------------*/
+/* .calendar .calendar_content div i.absent{
+    color: #dc3545;
+} */
+
+.calendar .calendar_content div p.absent{
+    background-color: #dc3545;
+}
+
+.calendar .calendar_content div p.absent{
+    color: white;
+}
+
+/* Late --------------------------------------*/
+/* .calendar .calendar_content div i.late{
+    color: #dfa44c;
+} */
+
+.calendar .calendar_content div p.late{
+    background-color: #dfa44c;
+}
+
+.calendar .calendar_content div p.late{
+    color: white;
+}

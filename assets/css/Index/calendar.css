@@ -1,0 +1,84 @@
+
+.calendar-main {
+    border: solid rgb(247, 246, 246) 1.5px;
+    margin: auto;
+    font-weight: 400;
+    padding: 8px 16px 22px 16px; 
+    background-color: rgb(245, 245, 245);
+    box-shadow: 20px 20px 35px 0 rgba(32, 32, 32, 0.08);
+    /* background-color: green; */
+    height: 100%;
+    border-radius: 8px;
+}
+
+/*-------------------------------
+    Header
+-------------------------------*/
+.calendar-main .calendar_header {
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-main .calendar_header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.calendar-main .calendar_header h2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(93, 93, 93);
+    width:70%;
+    margin: 0;
+}
+
+/*-------------------------------
+    Content
+-------------------------------*/
+.calendar-main .calendar_weekdays
+{
+    color: rgb(137, 137, 137);
+    font-size: 14px;    
+    height: 34px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: solid 1px rgb(198, 198, 198);
+}
+
+.calendar-main .calendar_weekdays div {
+    display:inline-block;
+    width: 13.18571%;
+    text-align: center;
+}
+
+.calendar-main .calendar_content div {
+    width: 14.28571%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    float: left;
+    z-index: 0;
+    height: 30px;
+    color: rgb(93, 93, 93);
+
+    display: flex;
+    justify-content: center;
+    line-height: 38px;
+}
+
+.calendar-main .calendar_content div.past-date p{
+    color: rgb(137, 137, 137);
+}
+
+
+.calendar-main .calendar_content div.today p{
+    font-weight: bold;
+    color:  rgb(41, 132, 235);
+}

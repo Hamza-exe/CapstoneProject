@@ -1,0 +1,124 @@
+/* <div class="my-container">
+<form>
+    <img src="assets/Images/Icon2.png" alt="">
+
+    <div class="form-group">
+        <label for="inputEmail" class="col-form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+        <label for="inputPassword" class="col-form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>            
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div> */
+
+@import "base.css";
+
+/*-----------------------------------
+    Container and sizing
+-------------------------------------*/
+
+body
+{
+    /* background-color: rgb(20, 120, 235); */
+}
+
+body .my-container
+{
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 60px);
+}
+
+.login-form
+{
+    width: 330px;
+    padding: 20px;
+    display: grid;
+    height: 450px;
+    place-content: center;
+    background-color: rgb(245, 245, 245);
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 35px 0 rgba(32, 32, 32, 0.08);
+}
+
+.login-form img
+{
+    margin: 0 auto;
+    width: 100px;
+}
+
+.login-form h4
+{
+    margin-top: -5px;
+    text-align: center;
+}
+
+.login-form p
+{
+    color: rgb(137, 137, 137);
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.login-form p + p
+{
+    margin-top: -4px;
+}
+
+/*-----------------------------------
+    Form inputs
+-------------------------------------*/
+
+.login-form input
+{
+    font-size: 12.5px;
+    border-radius: 30px;
+    color: rgb(137, 137, 137);
+    background-color: rgb(245, 245, 245);
+}
+
+.login-form input::placeholder
+{
+    color: rgb(137, 137, 137);
+}
+
+.login-form .check-container
+{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-form .check-container label
+{
+    color: rgb(137, 137, 137);
+}
+
+.login-form input[type=password], input[type=email]
+{
+    width: 270px;
+    margin-top: 15px;
+}
+
+.login-form button[type=submit]
+{
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+
+
+
+

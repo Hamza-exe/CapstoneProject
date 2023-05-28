@@ -1,0 +1,102 @@
+
+.scheduled-lates
+{
+    height: 300px;
+}
+
+.late-container
+{
+    border: solid rgb(247, 246, 246) 1.5px;
+    padding: 10px 0 0 0;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+    box-shadow: 20px 20px 35px 0 rgba(32, 32, 32, 0.08);
+}
+/*--------------------------------------------
+    Late Element
+---------------------------------------------*/
+
+.late-element 
+{
+    margin-bottom: 5px;
+}
+
+.late-element .row
+{
+    border-radius: 8px;
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    height: auto;
+}
+
+.late-element .time-container
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+/*----------------------------------
+    Time and Date 
+----------------------------------*/
+
+.late-element .time-container i
+{
+    font-size: 10px;
+}
+
+.time-container i.absent
+{
+    color: #dc3545;
+}
+
+.time-container i.late
+{
+    color: #dfa44c;
+}
+
+.late-element .time-container .date-time-container
+{
+    padding-left: 15px;
+}
+
+.late-element .time-container .date-time-container .time
+{
+    color: rgb(93, 93, 93);
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.late-element .time-container .date-time-container .date
+{
+    color: rgb(137, 137, 137);
+    font-size: 11px;
+    margin: 0;
+}
+
+/*----------------------------------
+    Content
+----------------------------------*/
+
+.late-element .content-container
+{
+    display: grid;
+    grid-gap: 0px;
+    align-items: center;
+}
+
+.late-element .course-title
+{
+    color: rgb(93, 93, 93);
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.late-element .course-code
+{
+    color: rgb(137, 137, 137);
+    font-size: 11px;
+    margin: 0;
+}

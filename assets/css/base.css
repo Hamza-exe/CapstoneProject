@@ -1,0 +1,46 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/%22%3E');
+
+*{
+    margin: 0;
+    padding: 0%;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+    color: rgb(93, 93, 93);
+    /* border:  red 1px dotted; */
+    
+}
+
+p, a, li, label, input, textarea, div, span{
+    font-family: helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    /* margin: 0; */
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.container{
+    position: relative;
+    width: 85%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.my-container
+{
+    width: calc(100% - 70px);
+    position: absolute;
+    right: 0;
+    top: 0;
+}

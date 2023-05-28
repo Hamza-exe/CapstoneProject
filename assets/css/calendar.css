@@ -1,0 +1,7 @@
+@import "index/header-footer.css";
+@import "index/profile.css";
+@import "index/calendar.css";
+@import "index/notifications.css";
+@import "index/schedule.css";
+
+@import "base.css";

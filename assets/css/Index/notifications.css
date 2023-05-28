@@ -1,0 +1,80 @@
+
+
+#notifications
+{
+    padding: 0;
+}
+
+#notifications .modal-header
+{
+    padding-top: 0;
+}
+
+#notifications .modal-footer
+{
+    padding-bottom: 0;
+}
+
+#notifications .modal-footer button
+{
+    width: 90px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: rgb(20, 120, 235);
+}
+
+
+/*---------------------------------------------------
+    Content
+---------------------------------------------------*/
+
+#notifications .modal-content
+{
+    padding: 20px;
+}
+
+#notifications .content-container
+{
+    display: flex;
+    align-items: center;
+}
+
+#notifications .content-container div{
+    width: 100%;
+}
+
+.response + .response
+{
+    margin-top: 15px;
+}
+
+#notifications img{
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0;
+}
+
+#notifications .content-container .date-name-container
+{
+    height: 12px;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#notifications .content-container .date-name-container p
+{
+    color: rgb(137, 137, 137);
+}
+
+
+#notifications .content-container .message{
+    margin: 0;
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+    margin-top: 7.5px;
+}

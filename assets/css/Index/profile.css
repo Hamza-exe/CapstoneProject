@@ -1,0 +1,63 @@
+/*---------------------------------------------------
+    Image
+---------------------------------------------------*/
+
+.profile-img img
+{
+    height: 210px;
+    width: 210px;
+    border-radius: 100%;
+    box-shadow: 20px 20px 35px 0 rgba(188, 187, 187, 0.3);
+}
+
+/*---------------------------------------------------
+    Content
+---------------------------------------------------*/
+
+.profile-content h2{
+    font-size: 34px;
+    margin: 0;
+    color: rgb(93, 93, 93);
+
+}
+.profile-content h3{
+    margin: 0;
+    font-size: 16px;font-weight: bold;
+    color: rgb(20, 120, 235);
+}
+
+.profile-content h4
+{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+    margin-bottom: 10px;
+}
+
+.profile-content h4 i{
+    margin-right: 5px;
+}
+
+.profile-content p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+}
+
+.profile-content .stars-list p{
+    font-size: 16px;
+    margin-right: 5px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    
+}
+
+.profile-content .stars-list i{
+    display: grid;
+    place-items: center;
+    color: rgb(20, 120, 235);
+    margin-left: 5px;
+}
+
+
